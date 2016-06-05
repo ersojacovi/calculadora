@@ -1,0 +1,41 @@
+<ion-view view-title="Calculator">
+  <ion-content class="padding">
+    <form action="#" name="calculadora" id="calculadora">
+		<input type="text" id="textoPantalla" ng-bind="numeroactual" ng-model="numeroactual" readonly/>
+        <br/>
+        <div class="button-bar">
+  			<input type="button" class="button largo" value="Retr" ng-click="retro()"/>
+            <input type="button" class="button largo" value="CE" ng-click="borradoParcial()"/>
+            <input type="button" class="button largo" value="C" ng-click="borradoTotal()"/>
+		</div>
+        <div class="button-bar">
+            <input type="button" value="7" class="button numero" ng-click="numero('7')"/>
+            <input type="button" value="8" class="button numero" ng-click="numero('8')"/>
+            <input type="button" value="9" class="button numero" ng-click="numero('9')"/>
+            <input type="button" value="/"  class="button operacion" ng-click="operar('/')"/>
+            <input type="button" value="Raiz" class="button operacion" ng-click="raizc()"/>
+        </div>
+        <div class="button-bar">
+            <input type="button" value="4" class="button numero" ng-click="numero('4')"/>
+            <input type="button" value="5" class="button numero" ng-click="numero('5')"/>
+            <input type="button" value="6" class="button numero" ng-click="numero('6')"/>
+            <input type="button" value="*" class="button operacion" ng-click="operar('*')"/>
+            <input type="button" value="%" class="button operacion" ng-click="porcent()"/>
+        </div>
+       <div class="button-bar">
+            <input type="button" value="1" class="button numero" ng-click="numero('1')"/>
+            <input type="button" value="2" class="button numero" ng-click="numero('2')"/>
+            <input type="button" value="3" class="button numero" ng-click="numero('3')"/>
+            <input type="button" value="-" class="button operacion" ng-click="operar('-')"/>
+            <input type="button" value="1/x" class="button operacion" ng-click="inve()"/>
+        </div>
+       <div class="button-bar">
+            <input type="button" value="0" class="button numero" ng-click="numero('0')"/>
+            <input type="button" value="+/-" class="button operacion" ng-click="opuest()"/>
+            <input type="button" value="." class="button operacion" ng-click="numero('.')"/>
+            <input type="button" value="+" class="button operacion" ng-click="operar('+')"/>
+            <input type="button" value="=" class="button operacion" ng-click="igualar()"/>
+       </div>
+  	</form>
+  </ion-content>
+</ion-view>
