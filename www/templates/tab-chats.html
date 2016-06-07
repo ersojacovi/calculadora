@@ -1,16 +1,19 @@
-<ion-view view-title="Chats">
+<ion-view view-title="Info">
   <ion-content>
-    <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
-      </ion-item>
-    </ion-list>
+  	<div class="list card">
+      <div class="item item-avatar">
+        <img src="img/photo.jpg">
+        <h2>Xavier Coso</h2>
+        <p>ersojacovi@gmail.com</p>
+      </div>
+    
+      <div class="item item-body">
+        <p>
+          This is my first ionic app and it was very funny doing it,
+          waiting the next challenge!!
+        </p>
+        
+      </div>
+    </div>
   </ion-content>
 </ion-view>
